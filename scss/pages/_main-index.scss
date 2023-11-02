@@ -1,0 +1,35 @@
+/*main section index*/
+main{
+    /*background-color: map-get($boton-primario, bg-primario);*/
+    background-image: linear-gradient(rgb(112, 241, 112), rgb(184, 13, 184));
+    padding: 10px;
+    section{
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: map-get($boton-primario, text-primario);
+        }
+        .contenido-inicio{
+            @include medidas-base;
+            display: flex;
+            justify-content: center;
+            /*width: 100%;
+            column-gap: 30px;
+            margin-bottom: 100px;*/
+            .titulo-inicio{
+                width: 20%;
+                h2{
+                    background-color: nth($list: $colores, $n: 2);
+                    color: map-get($boton-primario, bg-primario);
+                }
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+                img:hover{
+                    transform: translate(20px);
+                }
+            }
+        }
+    }
+}

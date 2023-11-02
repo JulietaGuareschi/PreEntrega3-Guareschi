@@ -1,0 +1,31 @@
+/*main section contacto*/
+main{
+    .contacto-inicio{
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: map-get($boton-primario, text-primario);
+        }
+        .contenido-contacto{
+            @include medidas-base;
+            display: flex;
+            justify-content: center;
+            /*background-color: nth($list: $colores, $n: 3);*/
+            /*width: 100%;
+            column-gap: 30px; 
+            margin-bottom: 100px;*/
+            .titulo-contacto{
+                width: 20%;
+                h2{
+                    background-color: nth($list: $colores, $n: 2);
+                    color: map-get($boton-primario, bg-primario); 
+                }
+            }
+        }
+        .foto-mansion{
+            width: 100%;
+            text-align: center;
+            /*margin-bottom: 100px;*/
+        }                 
+    }
+}

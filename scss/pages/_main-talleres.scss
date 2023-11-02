@@ -1,0 +1,30 @@
+/*main section talleres*/
+main{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: map-get($boton-primario, bg-primario);
+    padding: 10px;
+    section{
+        h1{
+            margin: 50px;
+            font-size: 80px;
+            font-weight: 100;
+            text-align: center;
+            color: nth($list: $colores, $n: 2);
+        }
+        .contenido-inicio-talleres{
+            @include medidas-base;
+            display: flex;
+            justify-content: center;
+            /*background-color: nth($list: $colores, $n: 5);*/
+            /*width: 100%;
+            column-gap: 30px;
+            margin-bottom: 100px;*/
+            .carousel-inner{
+                img{
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}

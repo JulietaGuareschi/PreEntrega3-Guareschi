@@ -1,0 +1,30 @@
+main{
+    background-color: map-get($boton-primario, bg-primario);
+    padding: 10px;
+    section{
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: map-get($boton-primario, text-primario);
+        }
+        .galeria{
+            display: grid;
+            width: 100%;
+            margin-left: 90px;
+            margin-bottom: 100px ;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: (3, 30vh);
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            img:hover{
+                transform: translate(20px, 20px);
+            }
+            .video-galeria{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/*main section eventos*/
+main{
+    background-color: map-get($boton-primario, bg-primario);
+    padding: 10px;
+    .eventos-inicio{
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: map-get($boton-primario, text-primario);
+        }
+        .contenido-eventos{
+            @include medidas-base;
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(rgb(112, 241, 112),rgb(248, 21, 184));
+            /*background-color: nth($list: $colores, $n: 4);*/
+            /*width: 100%;
+            column-gap: 30px;
+            margin-bottom: 100px;*/
+            .titulo-inicio{
+                width: 20%;
+                h2{
+                    background-color: nth($list: $colores, $n: 2);
+                    color: map-get($boton-primario, bg-primario);
+                }
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            .titulo-inicio:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

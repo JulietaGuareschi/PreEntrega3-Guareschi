@@ -1,0 +1,38 @@
+/*estructura header*/
+header{
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*background-color: nth($list: $colores, $n: 3);*/
+    background-image: linear-gradient(rgb(244, 244, 14), rgb(112, 241, 112));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 500px;
+        mask-image: linear-gradient( rgba(239, 239, 165, 0.275), rgba(235, 235, 200, 0.807));
+        -webkit-mask-image: linear-gradient( rgba(239, 239, 165, 0.275), rgba(235, 235, 200, 0.807));
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .logo:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            column-gap: 20px;
+            font-size: 25px;
+        }
+        ul li:hover{
+            transform: scale(1.2);
+        }
+        ul li:visited{
+            background-color: red;
+        }
+    }
+}
